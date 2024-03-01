@@ -12,11 +12,11 @@ app.use(express.json())
 
 
 
-app.use(cors({
+// app.use(cors({
 
-  methods:["POST", "GET", "PUT", "DELETE"],
-  credentials: true   
-}));
+//   methods:["POST", "GET", "PUT", "DELETE"],
+//   credentials: true   
+// }));
 
 app.use('/api/v1/',employee)
 
