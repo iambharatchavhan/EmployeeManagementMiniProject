@@ -1,3 +1,4 @@
+const cors = require('cors');
 const express = require('express')
 const app = express()
 const connect = require('./config/database')
@@ -12,7 +13,7 @@ app.use(express.json())
 
 
 app.use(cors({
- origin:[""],
+ origin:["https://employee-management-mini-project-fron-end.vercel.app/"],
   methods:["POST", "GET", "PUT", "DELETE"],
   credentials: true   
 }));
