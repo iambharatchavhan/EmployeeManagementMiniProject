@@ -21,7 +21,7 @@ app.use(cors({
 app.use('/api/v1/',employee)
 
 app.get('/',(req,res) => {
-    res.send(`<h1>HOMEPAGE ROUTE</h1>`)
+    res.send("server is up and running")
 })
 
 app.listen(port,()=>{
