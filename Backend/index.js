@@ -10,7 +10,7 @@ const port = 3000 || 4000
 app.use(express.json())
 
 
-app.use('/api/v1/',employee)
+
 
 app.use(cors({
  origin:["https://employee-management-mini-project-fron-end.vercel.app"],
@@ -18,6 +18,7 @@ app.use(cors({
   credentials: true   
 }));
 
+app.use('/api/v1/',employee)
 
 app.get('/',(req,res) => {
     res.send(`<h1>HOMEPAGE ROUTE</h1>`)
