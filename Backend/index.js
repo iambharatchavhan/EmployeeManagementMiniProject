@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 app.use(cors({
- origin:["https://employee-management-mini-project-fron-end.vercel.app"],
+ origin:["*"],
   methods:["POST", "GET", "PUT", "DELETE"],
   credentials: true   
 }));
