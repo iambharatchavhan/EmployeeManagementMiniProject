@@ -7,16 +7,11 @@ const employee = require('./routes/empRoutes')
 
 require('dotenv').config()
 const port = 3000 || 4000
-
+app.use(cors());
 app.use(express.json())
 
 
 
-app.use(cors({
-   origin:["https://employee-management-mini-project-fron-end.vercel.app"],
-  methods:["POST", "GET", "PUT", "DELETE"],
-  credentials: true   
-}));
 
 app.use('/api/v1/',employee)
 
