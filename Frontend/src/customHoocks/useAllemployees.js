@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const useAllEmployees = () => {
-  axios.defaults.withCredentials= true ;
+axios.defaults.withCredentials = true;
+
   const employeeUrl = import.meta.env.VITE_API_URL;
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
