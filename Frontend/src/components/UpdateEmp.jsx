@@ -6,6 +6,8 @@ import bg from "../assets/bg2.png";
 import { useNavigate } from "react-router-dom"; 
 
 const UpdateEmp = () => {
+  axios.defaults.withCredentials = true;
+
   const navigate = useNavigate();
 
   const params = useParams();
