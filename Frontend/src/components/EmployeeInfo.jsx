@@ -6,6 +6,8 @@ import female from "../assets/womanid.png";
 import axios from "axios";
 
 const EmployeeInfo = () => {
+  axios.defaults.withCredentials = true;
+
   const [employee, setEmployee] = useState([]);
 
   const createdAt = new Date(employee.createdAt);
