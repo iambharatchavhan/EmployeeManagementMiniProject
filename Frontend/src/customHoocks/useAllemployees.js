@@ -12,7 +12,7 @@ const useAllEmployees = () => {
     const getAllEmployees = async () => {
       try {
 
-        const response = await axios.get(employeeUrl);
+        const response = await axios.get("http://localhost:3000/api/v1/employees");
        
         setIsLoading(false);
         setData(response.data.data);
