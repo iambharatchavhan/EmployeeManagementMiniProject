@@ -12,11 +12,11 @@ app.use(express.json())
 
 
 
-// app.use(cors({
-
-//   methods:["POST", "GET", "PUT", "DELETE"],
-//   credentials: true   
-// }));
+app.use(cors({
+   origin:["https://employee-management-mini-project-fron-end.vercel.app"],
+  methods:["POST", "GET", "PUT", "DELETE"],
+  credentials: true   
+}));
 
 app.use('/api/v1/',employee)
 
