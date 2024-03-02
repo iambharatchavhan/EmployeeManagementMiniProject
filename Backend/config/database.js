@@ -6,7 +6,7 @@ const connect = async () => {
 
       await mongoose.connect("mongodb+srv://bharatchavhan1026:98LpOED7Ln1bSDaN@cluster0.rchyzeq.mongodb.net/EmployeeData",{})
       console.log("Database connection successfully")
-        process.exit(1);
+        // process.exit(1);
 
     }catch(error){
         console.log("message:",error.message)
